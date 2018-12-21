@@ -48,5 +48,5 @@ Route::delete('admin/article/{article}', function (Article $article) {
   return redirect('admin/');
 });
 Route::patch('admin/article/{article}', function (Article $article){
-    return $article['id'];	    
+    $article->edit();	    
 });
